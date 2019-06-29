@@ -2,7 +2,7 @@ Downloading the zip file from the FriendSpaceBookPlusAllAccessRedPremium.com cha
 - vm.py
 - program
 
-Looking into the program file we see that it contains emoticons in patterns.
+Looking into the program file I see that it contains emoticons in patterns.
 When opening the vm.py file we see a python script that expects the emoticon program as input and step troughs it to execute some functions.
 
 when running "python vm.py progam" the first part of the text comes fast. It is clear that you will get some url to follow.

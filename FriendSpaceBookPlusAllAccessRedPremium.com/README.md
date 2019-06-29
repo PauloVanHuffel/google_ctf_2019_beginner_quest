@@ -67,7 +67,7 @@ I had counted the stack lines loaded and the chars in the url and knew there was
 
 The last block was a small and fun obstacle. I could not find any pages that had enough of the palingdromic prime numbers listed to solve it the easy way.
 I did find a page that had primes bigger than the ones in the stack of the last block.
-I created a small script to scrape these pages and filter out the palingdromes. Then xored the results.
+I created a small script (available here as vm_solver.py) to scrape these pages and filter out the palingdromes. Then xored the results.
 
 2 letters where not working. but are easily guessable. With this the full page revealed itself 
 and with a few clicks there was that beautifull flag!! :D

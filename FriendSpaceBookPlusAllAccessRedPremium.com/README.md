@@ -3,7 +3,7 @@ Downloading the zip file from the FriendSpaceBookPlusAllAccessRedPremium.com cha
 - program
 
 Looking into the program file I see that it contains emoticons in patterns.
-When opening the vm.py file we find a python script that expects the emoticon program as input and step troughs it to execute some functions.
+When opening the vm.py file we find a python script that expects the emoticon program as input and step through it to execute some functions.
 
 when running "python vm.py progam" the first part of the text comes fast. It is clear that you will get some url to follow.
 After some characters the next characters begin to come in slower and slower untill its just not an option anymore to keep it running.
@@ -15,9 +15,9 @@ I spend some time reading the vm.py code and I internalized the program as follo
 - The program creates a stack and 2 registers (medalions). 
 - It can load numbers (number emoticons) into registers.
 - It can push what is in registers into the stack
-- It can pop a number from the stack just trowing it out
+- It can pop a number from the stack just throwing it out
 - It can pop a number from the stack into any of the registers
-- It can pop 2 numbers and do addition, substraction, multiplication, devision, modulo and xor
+- It can pop 2 numbers and do addition, subtraction, multiplication, devision, modulo and xor
 - It can duplicate the last value on the stack
 - It can execute jumps to different locations
 - It can run code or skip code if the last value on the stack is 0 or not 0

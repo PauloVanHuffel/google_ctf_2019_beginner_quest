@@ -27,9 +27,9 @@ I spend some time reading the vm.py code and I internalized the program as follo
 
 I had been doing some assembly reverse engineering exercises before the Google ctf so I thought ok this is just like assembly. Lets go over the instructions and see what is going on.
 
-At first reading emoticon was very difficult and confusing. So I started fiddling with the vm.py file. As the code was running increasingly more slowly I thought that perhaps the challenge was to improve te vm.py code to be more efficient. I stayed on that thought for far to long. Even when it was clear that the vm code was not vastly improvable I still thought maybe the emoticon program file could be adjusted to avoid some loops.
+At first reading emoticon was very difficult and confusing. So I started fiddling with the vm.py file. As the code was running increasingly more slowly I thought that perhaps the challenge was to improve the vm.py code to be more efficient. I stayed on that thought for far to long. Even when it was clear that the vm code was not vastly improvable I still thought maybe the emoticon program file could be adjusted to avoid some loops.
 
-This path of thinking made me spend a lot of time in emoticon land. After a while it even became easy to read what was going on. That is when I started realizing that this code was chuck full of jumpt and if_zero conditions that contained jumps.
+This path of thinking made me spend a lot of time in emoticon land. After a while it even became easy to read what was going on. That is when I started realizing that this code was chuck full of jump and if_zero conditions that contained jumps.
 
 I did find out that the 3 loading parts all had the same parsing of there generated stack below them so I tried splitting them in 3 and running each part separately with the vm. The second and third part however still never even gave one character output :(
 
@@ -41,15 +41,15 @@ I still thought that maybe the program code could generate these primes without 
 
 After this solving the challenge went quite fast and became fun again!! :D
 
-typing in the primes 3 5 7 11 101 131 151 181 191? into Google in hope that it could tell me the pattern (I often refrain from putting parts of a challenge into Google as I fear to be spoiled by write-ups) I finally found out that these were all palingdromic prime numerbs!
+typing in the primes 3 5 7 11 101 131 151 181 191? into Google in hope that it could tell me the pattern (I often refrain from putting parts of a challenge into Google as I fear to be spoiled by write-ups) I finally found out that these were all palindromic prime numbers!
 
 I finally was there. Just lookup a list of these numbers and start xoring them with the loaded numbers. I used this page: https://prime-numbers.info/list/palindromic-primes
 
-This made it possible for me to solve the first 2 blocks of the stack gatting me to: http://emoji-t0anaxnr3nacpt4na.web.ctfcompetition.com/
+This made it possible for me to solve the first 2 blocks of the stack resulting in: http://emoji-t0anaxnr3nacpt4na.web.ctfcompetition.com/
 
 from just running the code while my struggles where going on I already got http://emoji-t0anaxnr3nacpt4na.web.ctfc and because I had already gotten to other challenges that had the .web.ctfcompetition.com/ domain I had guessed that part long before. I found the cats web page and while amusing to look trough I was quite convinced that this part would not get me to solve the challenge. I had counted the stack lines loaded and the chars in the URL and knew there was more to be decoded.
 
-The last block was a small and fun obstacle. I could not find any pages that had enough of the palingdromic prime numbers listed to solve it the easy way. I did find a page that had primes bigger than the ones in the stack of the last block. I created a small script (available here as vm_solver.py) to scrape these pages and filter out the palindromes. Then xored the results.
+The last block was a small and fun obstacle. I could not find any pages that had enough of the palindromic prime numbers listed to solve it the easy way. I did find a page that had primes bigger than the ones in the stack of the last block. I created a small script (available here as vm_solver.py) to scrape these pages and filter out the palindromes. Then xored the results.
 
 2 letters where not working. But are easily guessable. With this the full page revealed itself and with a few clicks there was that beautiful flag!! :D
 

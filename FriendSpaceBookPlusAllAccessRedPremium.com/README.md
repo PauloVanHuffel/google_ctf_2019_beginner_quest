@@ -24,13 +24,13 @@ I spend some time reading the vm.py code and I internalized the program as follo
 - It can change the pointer to an adress based on the last value of the stack
 - It can print the chr version of the last number on the stack
 
-I had been doing some assembly reverse engineering exercises before the google ctf so I tought ok this is just like assembly.
+I had been doing some assembly reverse engineering exercises before the google ctf so I thought ok this is just like assembly.
 Lets go over the instructions and see what is going on.
 
 At first reading emoticon was very difficult and confusing.
 So I started fideling with the vm.py file. 
-As the code was running increasingly more slowely I tought that perhaps the challenge was to improve te vm.py code to be more efficient.
-I stayed on that tought for far to long. Even when it was clear that the vm code was not vastly improvable I still tought maybe the 
+As the code was running increasingly more slowely I thought that perhaps the challenge was to improve te vm.py code to be more efficient.
+I stayed on that thought for far to long. Even when it was clear that the vm code was not vastly improvable I still thought maybe the 
 emoticon program file could be adjusted to avoid some loops.
 
 This path of thinking made me spend a lot of time in emoticon land. After a while it even became easy to read what was going on.

@@ -1,6 +1,6 @@
 Downloading the zip file from the FriendSpaceBookPlusAllAccessRedPremium.com challange and unzipping it gives 2 files:
-vm.py
-program
+- vm.py
+- program
 
 Looking into the program file we see that it contains emoticons in patterns.
 When opening the vm.py file we see a python script that expects the emoticon program as input and step troughs it to execute some functions.

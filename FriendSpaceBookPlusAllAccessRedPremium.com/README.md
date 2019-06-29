@@ -9,17 +9,19 @@ when running "python vm.py progam" the first part of the text comes fast. It is 
 After some characters the next characters begin to come in slower and slower untill its just not an option anymore to keep it running.
 
 This challenge took quite a bit longer than i had hoped to spend on it.
+
 I spend some time reading the vm.py code and I internalized the program as follows:
-The program creates a stack and 2 registers (medalions). 
-It can load numbers (number emoticons) into registers.
-It can push what is in registers into the stack
-It can pop a number from the stack just trowing it out
-It can pop a number from the stack into any of the registers
-It can pop 2 numbers and do addition, substraction, multiplication, devision, modulo and xor
-It can execute jumps to different locations
-It can run code or skip code if the last value on the stack is 0 or not 0
-It can change the pointer to an adress based on the last value of the stack
-It can print the chr version of the last number on the stack
+
+- The program creates a stack and 2 registers (medalions). 
+- It can load numbers (number emoticons) into registers.
+- It can push what is in registers into the stack
+- It can pop a number from the stack just trowing it out
+- It can pop a number from the stack into any of the registers
+- It can pop 2 numbers and do addition, substraction, multiplication, devision, modulo and xor
+- It can execute jumps to different locations
+- It can run code or skip code if the last value on the stack is 0 or not 0
+- It can change the pointer to an adress based on the last value of the stack
+- It can print the chr version of the last number on the stack
 
 I had been doing some assembly reverse engineering exercises before the google ctf so I tought ok this is just like assembly.
 Lets go over the instructions and see what is going on.

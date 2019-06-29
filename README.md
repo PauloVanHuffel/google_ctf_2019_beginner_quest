@@ -1,4 +1,4 @@
-# google_ctf_2019_beginner_quest
+# google ctf 2019: beginner quest
 writeup + scripts of some challenges completed in the google ctf 2019 beginner quest
 
 I participted for the first time in the beginner challenge last year. I almost got the cake but did not quite make it. Hope to do better this time.

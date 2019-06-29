@@ -18,6 +18,7 @@ I spend some time reading the vm.py code and I internalized the program as follo
 - It can pop a number from the stack just trowing it out
 - It can pop a number from the stack into any of the registers
 - It can pop 2 numbers and do addition, substraction, multiplication, devision, modulo and xor
+- It can duplicate the last value on the stack
 - It can execute jumps to different locations
 - It can run code or skip code if the last value on the stack is 0 or not 0
 - It can change the pointer to an adress based on the last value of the stack

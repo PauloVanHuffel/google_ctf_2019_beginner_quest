@@ -2,8 +2,8 @@
 
 Downloading the zip file from the FriendSpaceBookPlusAllAccessRedPremium.com challenge and unzipping it gives 2 files:
 
-    vm.py
-    program
+- vm.py
+- program
 
 Looking into the program file I see that it contains emoticons in patterns. When opening the vm.py file we find a python script that expects the emoticon program as input and step through it to execute some functions.
 
@@ -13,17 +13,17 @@ This challenge took quite a bit longer than I had hoped to spend on it.
 
 I spend some time reading the vm.py code and I internalized the program as follows:
 
-    The program creates a stack and 2 registers (medallions).
-    It can load numbers (number emoticons) into registers.
-    It can push what is in registers into the stack
-    It can pop a number from the stack just throwing it out
-    It can pop a number from the stack into any of the registers
-    It can pop 2 numbers and do addition, subtraction, multiplication, division, modulo and xor
-    It can duplicate the last value on the stack
-    It can execute jumps to different locations
-    It can run code or skip code if the last value on the stack is 0 or not 0
-    It can change the pointer to an address based on the last value of the stack
-    It can print the chr version of the last number on the stack
+- The program creates a stack and 2 registers (medallions).
+- It can load numbers (number emoticons) into registers.
+- It can push what is in registers into the stack
+- It can pop a number from the stack just throwing it out
+- It can pop a number from the stack into any of the registers
+- It can pop 2 numbers and do addition, subtraction, multiplication, division, modulo and xor
+- It can duplicate the last value on the stack
+- It can execute jumps to different locations
+- It can run code or skip code if the last value on the stack is 0 or not 0
+- It can change the pointer to an address based on the last value of the stack
+- It can print the chr version of the last number on the stack
 
 I had been doing some assembly reverse engineering exercises before the Google ctf so I thought ok this is just like assembly. Lets go over the instructions and see what is going on.
 

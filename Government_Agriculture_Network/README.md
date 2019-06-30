@@ -1,6 +1,6 @@
 On this challenge i did some cheating
 I have come across some other xss challenges like last years google ctf. I know how xss works but most of the time I just test if i can get the xss to work with a simple
-alert("hi). In the writeups before I have seen people set up severs to connect to trough the xss
+alert("hi"). In the writeups before I have seen people set up severs to connect to trough the xss
 
 As I could not do these challenges during the accual CTF time and did them in the week/weekend after I could just lookup the flag and check if my xss would hve been correct.
 I was lucky tough. The writeup i read started of by setting up a mock api at:

@@ -16,17 +16,17 @@ I spent quite a long time trying to find a way to generate all these primes. I a
 
 When I finaly started generating prime numbers within the bounds I quickly realized that there are just to many. It was quite late in the day at this point and I had completed almost all other challenges which probably made me to tired to push on as here I just gave up and looked up the solution :(
 
-The solution is the only other sensible thing to do. Try and solve the equations to P or Q. To do so we need to change the unequality to an equality:
-A*p - x = B*q with |x| <1000
-then multiply both sided with p:
-A*p² - x*p = B*q*p
-As p*q = N we can write:
-A*p² - x*p = B*N
-or
-A*p² - x*p - B*N = 0 
-We can now solve this second degree equation to p. as b, a and x are all fairly small we can loop trough all posible values of them and find the correct p and q pair:
-d = x² - 4*A*B*N
-p = ( -x * sqrt(d) )/(2*A)
+The solution is the only other sensible thing to do. Try and solve the equations to P or Q. To do so we need to change the unequality to an equality:<br />
+A*p - x = B*q with |x| <1000<br />
+then multiply both sided with p:<br />
+A*p² - x*p = B*q*p<br />
+As p*q = N we can write:<br />
+A*p² - x*p = B*N<br />
+or<br />
+A*p² - x*p - B*N = 0 <br />
+We can now solve this second degree equation to p. as b, a and x are all fairly small we can loop trough all posible values of them and find the correct p and q pair:<br />
+d = x² - 4*A*B*N<br />
+p = ( -x * sqrt(d) )/(2*A)<br />
 
 Here I again came across the issue of taking square roots of very large numbers. I found in the write-up I read that there are algorithms for "nth root". This finds the integer x where x to the nth is as close as possible to the input number. As p and q need to be integers. the nth root will give a number that is only 0,x away from the actual root which is not that relevant for the huge numbers we are working with here.
 

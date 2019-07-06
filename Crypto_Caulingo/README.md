@@ -3,10 +3,10 @@ I got very dissapointed in myself on this challenge. I did not search long enoug
 
 We get a pdf and a msg.txt file<br />
 The pdf explains this is an RSA encoded message. We get a restriction for the primes that are used for the encoding and decoding.
-The restiction is:
-A\*p - B\*q < 10000
-and
-1 <= A, B <= 1000
+The restiction is:<br />
+A\*p - B\*q < 10000<br />
+and<br />
+1 <= A, B <= 1000<br />
 
 I was not sure if this ment that A is bigger than 1 and B is smaller than 1000 or bot A en B are between 1 and 1000. This is not clarified in the text but the second one seems like the more logical option.
 

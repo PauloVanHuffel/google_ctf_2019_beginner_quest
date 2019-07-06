@@ -1,6 +1,6 @@
 This is the first challenge.
 
-This can be solved vary quickly:
+This can be solved very quickly:
 
 Strings rand2 | grep CTF
 

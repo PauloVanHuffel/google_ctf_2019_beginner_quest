@@ -2,6 +2,8 @@ The STOP GAN challenge was the first (and only :( ) pwn challenge.<br />
 As last year there were a lot of pwn challenges and I found these quite difficult as I had little experience with it I struggled but learned alot about them. I was thus prepared this year and had been practicing for these challenges a bit in the hope to not be as lost in solving them. <br />
 The pwn challenges this year however where a lot more basic than last year.
 
+Reading the content of console.c and executing the instructions gives you a console binary that is used to run the bof binary trough qemu. In the folowing explanation I ignore the colsole part, everything below is in reference to the input asked after executing the console binary and using its run fuction.
+
 In this challenge just getting the program to crash got you one flag. This is very easy. Just type enough A's or whatever character you want and if you got enough of them you will get the first flag.
 
 The second flag was a little bit more dificult.<br />

@@ -30,4 +30,6 @@ I thus need to fill the buffer: 260 chars (/bytes) and overwrite the base_pointe
 
 That's all info needed to make the exploit code. running this code prints out both flags!
 
+With this we get 2 endings. The ending from the bonus flag gives a link to a video which seems to be a parody'ish on Lifeoverflow. I'm not sure if there is a deeper meaning than just a joke or anything further that can be gotten from this. There are 2 videos on the channel both seemingly the same. Maybe there is a difference that is significant. I have not spend any more time into this as I had more challenges that are on the chart to solve. A quick google did not result in anything and I would imagine the comment section to be off to avoid spoilers like in the ad challenge if there is any more to it. If someone finds something out please do share it with me :D
+
 

@@ -23,7 +23,7 @@ I keep pictures of my credentials in extended attributes.
 Ok so some googleing of how to read extended attributes gave me:<br />
 getfattr ./Users/Family/Documents/credentials.txt
 
-this will show you thare is indeed one file attribute attached: user.FILE0
+this will show you there is indeed one file attribute attached: user.FILE0
 
 to get the content run:<br />
 getfattr -n user.FILE0 ./Users/Family/Documents/credentials.txt

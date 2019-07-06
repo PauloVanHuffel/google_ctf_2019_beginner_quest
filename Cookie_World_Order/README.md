@@ -25,7 +25,7 @@ Adding this in my firefox storage (explained in my Government Agriculture Networ
 - Livestreams
 - Camera Controls
 
-The first 2 do nothing the last one gives the message:<br />
+The first 2 do nothing, the last one gives the message:<br />
 Requests only accepted from 127.0.0.1
 
 Here I got stuck. I did not know for sure there was a flag to find here but it did seem like there was something here.

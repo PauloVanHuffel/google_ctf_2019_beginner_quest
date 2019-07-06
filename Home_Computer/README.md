@@ -4,7 +4,7 @@ In the Home Computer challenge we get 2 files:
 
 The note is there to make the challenge solvable on macOS
 
-the .ntfs file is a windows file systhem that can be mounted.
+the .ntfs file is a windows file system that can be mounted.
 to do so run:
 sudo mount -t ntfs family.ntfs /mnt/ntfs (you might need to make the /mnt/ntfs folder first)
 

@@ -1,4 +1,4 @@
-The STOP GAN challenge was the first pwn challenge.<br />
+The STOP GAN challenge was the first (and only :( ) pwn challenge.<br />
 As last year there were a lot of pwn challenges and I found these quite difficult as I had little experience with it I struggled but learned alot about them. I was thus prepared this year and had been practicing for these challenges a bit in the hope to not be as lost in solving them. <br />
 The pwn challenges this year however where a lot more basic than last year.
 
@@ -24,8 +24,8 @@ I recomend not using a dissasembler for most pwn challenges if you are realy new
 So to solve this I first disassembled the code with ghidra. as I need to figure out where to redirect to to get the second flag.
 The first thing i do is check the function calls in main. I see in the assembly that at the start there is a call to write_out.<br />
 I dont see this call in the dissasembler output? When following what write_out does I see the segfoult message we got from the basic overflow so I am guessing this is not in the dissasembly output as segfaulting is not part of the normal program flow. The write_out function then calls the print_file function with argument flag0. I then looked if this print_file is used elsewhere.<br />
-It is. It is used in a function called local_flag where it prints the content of flag1.
-So I need to make the controlled crash return to local_flag, the adress of which is 0x00400840.
+It is. It is used in a function called local_flag where it prints the content of flag1.<br />
+So I need to make the controlled crash return to local_flag, the adress of which is 0x00400840.<br />
 I thus need to fill the buffer: 260 chars (/bytes) and overwrite the base_pointer 4 chars (/bytes) and then add the adress of local_flag. The pwn library gives some functions to make life more easy like the p32 packing function. The default mode of this function will return me the little endian (reverse order) bytes for this adress to put as the main return adress.
 
 That's all info needed to make the exploit code. running this code prints out both flags!

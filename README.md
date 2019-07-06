@@ -21,3 +21,7 @@ I might during the rest of the year try and do one of the real challenges of thi
 Google CTF has realy become my measure of progress for my infosec knowledge. I hope to get to a point where I am able to participate as a team member in multiple CTF's and accualy be usefull :D
 
 Again thanks google for making these challenges! It was again a lot of fun!
+
+
+ps: This is the first time i'm making write-ups. The quality might be a bit poor but I really try to explain extensively to teach people with very minimal knowledge. I hope this content makes up for the lack in writing quality :D <br />
+I might at least run this trough a spellingchecker later to remove the undoubtfully manny spelling mistakes later on.

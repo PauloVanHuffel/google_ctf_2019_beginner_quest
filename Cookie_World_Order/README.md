@@ -19,7 +19,7 @@ I tried this /admin page as it is a common page on many sites but for a more rel
 dirb https://cwo-xss.web.ctfcompetition.com<br />
 the dirb program will go trough a wordlist of common website paths and test them all and return you which ones worked.
 
-But the xss also gives you an auth token from the admin.
+The xss also gives you an auth token from the admin.
 Adding this in my firefox storage (explained in my Government Agriculture Network write-up) and going again to the /admin page I now get a new page with 3 options:
 - Users
 - Livestreams

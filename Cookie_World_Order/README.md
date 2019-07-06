@@ -14,7 +14,7 @@ Using an img tag with an onerror that executes javascript is another very common
 
 This gave me the flag on the beeceptor mock api page!
 
-When trying to go to /admin of the page you get redirected back to the same page at first.<br />
+When trying to go to /admin of the page you get redirected back to the main page.<br />
 I tried this /admin page as it is a common page on many sites but for a more reliable way of getting these kind of pages you can use:<br />
 dirb https://cwo-xss.web.ctfcompetition.com<br />
 the dirb program will go trough a wordlist of common website paths and test them all and return you which ones worked.
